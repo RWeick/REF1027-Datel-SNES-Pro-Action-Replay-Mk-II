@@ -7564,7 +7564,7 @@
 		)
 		(uuid "f262e051-3d05-4b4d-bd78-f2d30547d03f")
 	)
-	(text "PLD.Clk.OE = VCC\nPLD.Clk = (bits are BA7 to A0)\n	- Write to 1xxxxxxx 1x1xxxx0 xx00xxxx\n\nD4 Pullup.OE = VCC\n/D4 Pullup = (bits are BA7 to A0)\n	- Write to 1xxxxxxx 1x1xxxx0 xx00xx1x (registered output)\n	- Write to 1xxxxxxx 1x1xxxx0 xx00x1xx (registered output)\n	- Read from x0xxxxxx 0x213Fh\n\nA22.OE = VCC\nA22 = (bits are BA7 to A0)\n	- Write to 1xxxxxxx 1x1xxxx0 xx00xxx1 (registered output)\n	- Address is 1xxxxxxx xxxxxxxx xxxxxxxx\n\nSRAM.WE.OE=VCC\n/SRAM.WE= (bits are BA7 to A0)\n	- Have not written to 1xxxxxxx 1x1xxxx0 xx00x1xx (registered output)\n	- For as long as Write is low\n\nD4 Pulldown.OE = VCC\nD4 Pulldown = (bits are BA7 to A0)\n	- Have not written to 1xxxxxxx 1x1xxxx0 xx00xx1x (registered output)\n	- Write to 1xxxxxxx 1x1xxxx0 xx00x1xx (registered output)\n	- Read from x1xxxxxx 0x213Fh"
+	(text "PLD.Clk.OE = VCC\nPLD.Clk = (bits are BA7 to A0)\n	- Write to 1xxxxxxx 1x1xxxx0 xx00xxxx\n\nD4 Pullup.OE = VCC\n/D4 Pullup = (bits are BA7 to A0)\n	- Write to 1xxxxxxx 1x1xxxx0 xx00x11x (registered output)\n	- Read from x0xxxxxx 0x213Fh\n\nA22.OE = VCC\nA22 = (bits are BA7 to A0)\n	- Write to 1xxxxxxx 1x1xxxx0 xx00xxx1 (registered output)\n	- Address is 1xxxxxxx xxxxxxxx xxxxxxxx\n\nSRAM.WE.OE=VCC\n/SRAM.WE= (bits are BA7 to A0)\n	- Have not written to 1xxxxxxx 1x1xxxx0 xx00x1xx (registered output)\n	- For as long as Write is low\n\nD4 Pulldown.OE = VCC\nD4 Pulldown = (bits are BA7 to A0)\n	- Write to 1xxxxxxx 1x1xxxx0 xx00x10x (registered output)\n	- Read from x1xxxxxx 0x213Fh"
 		(exclude_from_sim no)
 		(at 252.476 253.492 0)
 		(effects
@@ -8532,13 +8532,13 @@
 		(uuid "501e6e8c-ffe3-42b4-8e2a-aeddb9835036")
 	)
 	(label "GND"
-		(at 288.29 172.72 0)
+		(at 285.75 175.26 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "50c87231-82b0-439b-9890-cbb278ddcd12")
 	)
@@ -10534,13 +10534,13 @@
 		(uuid "e9b7b9f3-df5b-4fd2-92e5-6259739e0c90")
 	)
 	(label "VCC"
-		(at 283.21 172.72 180)
+		(at 285.75 170.18 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "ea32deca-8b45-43d4-b415-03809402391c")
 	)
@@ -11798,10 +11798,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5a41c2d3-0c9b-4952-920a-f8c99dc4dd16")
 		(property "Reference" "D1"
-			(at 41.91 157.48 0)
+			(at 41.656 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11809,7 +11808,7 @@
 			)
 		)
 		(property "Value" "D_Filled"
-			(at 39.37 157.48 0)
+			(at 41.656 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11886,7 +11885,7 @@
 		(dnp no)
 		(uuid "6a92926e-db88-41a4-a3cc-0e604504c299")
 		(property "Reference" "R1"
-			(at 60.96 116.84 90)
+			(at 62.23 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11894,7 +11893,7 @@
 			)
 		)
 		(property "Value" "332"
-			(at 63.5 116.84 90)
+			(at 62.23 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11951,10 +11950,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6fc1990c-7efd-4f1e-94ac-7ac566ecad6e")
 		(property "Reference" "C2"
-			(at 57.15 143.5163 90)
+			(at 56.896 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11962,7 +11960,7 @@
 			)
 		)
 		(property "Value" "481 pF"
-			(at 54.61 143.5163 90)
+			(at 56.896 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12552,16 +12550,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 285.75 172.72 90)
+		(at 285.75 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "95754c84-ddea-40de-a111-93298dffcebf")
 		(property "Reference" "C4"
-			(at 285.7563 166.37 90)
+			(at 292.862 171.704 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12569,7 +12566,7 @@
 			)
 		)
 		(property "Value" "100 nF"
-			(at 285.7563 168.91 90)
+			(at 292.862 174.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13087,10 +13084,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "dbb136ad-afd8-4121-8017-f69a4256b077")
 		(property "Reference" "R2"
-			(at 60.96 143.51 90)
+			(at 71.12 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13098,7 +13094,7 @@
 			)
 		)
 		(property "Value" "473"
-			(at 63.5 143.51 90)
+			(at 71.12 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13510,7 +13506,7 @@
 		(dnp no)
 		(uuid "f929526e-e655-4530-99fa-b68c7a6d7231")
 		(property "Reference" "R3"
-			(at 59.944 100.076 90)
+			(at 61.468 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13518,7 +13514,7 @@
 			)
 		)
 		(property "Value" "332"
-			(at 62.484 100.076 90)
+			(at 61.468 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
